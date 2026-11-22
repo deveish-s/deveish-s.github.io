@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deveish Sivakumar</title>
+<meta name="description" content="Computer Science and Engineering student at TU Eindhoven, seeking a Summer 2027 software engineering internship.">
+<style>
+  :root { --bg:#f5f5f2; --card:#ffffff; --text:#1a1a1a; --muted:#5f5e5a; --accent:#1F3A5F; --on-accent:#ffffff; --soft:#e6edf5; --border:#e4e2dc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121212; --card:#1c1c1c; --text:#f1f1f1; --muted:#a8a7a1; --accent:#85B7EB; --on-accent:#0b1a2a; --soft:#1c2a3a; --border:#2e2e2e; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; line-height: 1.6; }
+  main { width: 100%; max-width: 520px; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 36px 32px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  .degree { color: var(--muted); margin-top: 6px; font-size: 15px; }
+  .pill { display: inline-block; margin-top: 16px; background: var(--accent); color: var(--on-accent); font-size: 14px; font-weight: 600; padding: 6px 14px; border-radius: 999px; }
+  .about { margin-top: 20px; font-size: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; padding: 0; list-style: none; }
+  .tags li { background: var(--soft); color: var(--accent); font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 6px; }
+  .actions { display: grid; gap: 10px; margin-top: 28px; }
+  .btn { display: block; text-align: center; text-decoration: none; font-weight: 600; font-size: 16px; padding: 14px; border-radius: 10px; border: 1.5px solid var(--accent); color: var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--on-accent); }
+  .btn:hover { opacity: 0.88; }
+  footer { margin-top: 24px; font-size: 13px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Deveish Sivakumar</h1>
+  <p class="degree">B.S. Computer Science and Engineering, Eindhoven University of Technology · Graduating June 2028</p>
+  <span class="pill">Seeking a Summer 2027 internship</span>
+
+  <p class="about">I'm a software engineering student focused on backend and cloud systems. Most recently I built an automated publishing pipeline in Go with OAuth 2.0 and encrypted token storage at IncuBrix in Singapore, serving 500+ users.</p>
+
+  <ul class="tags">
+    <li>Go</li><li>Python</li><li>Java</li><li>REST APIs</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>SQL</li>
+  </ul>
+
+  <div class="actions">
+    <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">View my resume</a>
+    <a class="btn" href="https://www.linkedin.com/in/deveish/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <a class="btn" href="mailto:d.sivakumar@student.tue.nl">Email me</a>
+  </div>
+
+  <footer>Eindhoven, Netherlands</footer>
+</main>
+</body>
+</html>
