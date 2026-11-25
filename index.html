@@ -13,7 +13,9 @@
   * { box-sizing: border-box; margin: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; line-height: 1.6; }
   main { width: 100%; max-width: 520px; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 36px 32px; }
-  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  .header { display: flex; align-items: center; gap: 16px; }
+  .avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid var(--border); flex-shrink: 0; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; }
   .degree { color: var(--muted); margin-top: 6px; font-size: 15px; }
   .pill { display: inline-block; margin-top: 16px; background: var(--accent); color: var(--on-accent); font-size: 14px; font-weight: 600; padding: 6px 14px; border-radius: 999px; }
   .about { margin-top: 20px; font-size: 16px; }
@@ -28,19 +30,24 @@
 </head>
 <body>
 <main>
-  <h1>Deveish Sivakumar</h1>
-  <p class="degree">B.S. Computer Science and Engineering, Eindhoven University of Technology · Graduating June 2028</p>
+  <div class="header">
+    <img class="avatar" src="profile.jpg" alt="Deveish Sivakumar">
+    <div>
+      <h1>Deveish Sivakumar</h1>
+      <p class="degree">B.S. Computer Science and Engineering, Eindhoven University of Technology · Graduating June 2028</p>
+    </div>
+  </div>
   <span class="pill">Seeking a Summer 2027 internship</span>
 
-  <p class="about"> Hey there, I’m Deveish! I’m drawn to roles at the intersection of engineering and product: building reliable systems and eventually owning product strategy end-to-end. I care about translating business needs into user-centric software.
+  <p class="about">Hey there, I’m Deveish! I’m drawn to roles at the intersection of engineering and product: building reliable systems and eventually owning product strategy end-to-end. I care about translating business needs into user-centric software.
 Most recently at IncuBrix, an AI-powered creator studio for creating, publishing and tracking content across platform, I built the TikTok publishing pipeline and analytics integrations in Golang. I also worked on go-to-market strategy and lead generation to support user acquisition. Having completed my internship there, I came away with valuable experience in taking a product from idea to production, designing modules that fit into an existing architecture, navigating third-party platform constraints and approval processes, and scoping features with stakeholders across engineering and product.
-I’m currently open to internship opportunities for summer 2027 across software engineering, product, and related roles where I can contribute to building impactful solutions. </p>
+I’m currently open to internship opportunities for summer 2027 across software engineering, product, and related roles where I can contribute to building impactful solutions.</p>
 
   <ul class="tags">
     <li>Go</li><li>Python</li><li>Java</li><li>REST APIs</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>SQL</li>
   </ul>
 
-  <div class="actions"> Feel free to reach out via the channels below:
+  <div class="actions">Feel free to reach out via the channels below:
     <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">View my resume</a>
     <a class="btn" href="https://www.linkedin.com/in/deveish/" target="_blank" rel="noopener">Connect on LinkedIn</a>
     <a class="btn" href="mailto:d.sivakumar@student.tue.nl">Email me</a>
